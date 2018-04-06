@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+  	<title>test page - offset example</title>
+  	<style>
+  		#container {
+        position: relative;
+  			width: 1000px;
+        height: 100px;
+        overflow: hidden;
+        background: linear-gradient(to left, #a0a0a0 50%, #5f5f5f 50%);
+  		}
+      
+      #center-block {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 1760px;
+        height: 60px;
+        background-color: wheat;
+        display: block;
+        transition: left 0.5s 0.1s
+      }
+
+      .d {
+        text-align: center;
+        height: 40px;
+        margin: 10px 10px;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      .d1 { width: 100px; background-color: red; }
+
+      .d2 { width: 200px; background-color: blue; }
+
+      .d3 { width: 300px; background-color: yellow; }
+
+      .d4 { width: 400px; background-color: green; }
+  	</style>
+  </head>
+  <body>
+  	<div id="container">
+      <div id="center-block">
+        <div class="d d1">d1
+        </div><div class="d d2">d2
+        </div><div class="d d3">d3
+        </div><div class="d d4">d4
+        </div><div class="d d1">d5
+        </div><div class="d d2">d6
+        </div><div class="d d1">d7
+        </div><div class="d d2">d8
+        </div>
+      </div> 
+    </div>
+    <script type="text/javascript" src="./test.js"></script>
+  </body>
+</html>
